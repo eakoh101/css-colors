@@ -1,1 +1,44 @@
-/* Start coding here */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            /* ใช้ค่า HSL ที่กำหนด: สีชมพูแดง (0) ไล่ไปหา สีน้ำเงิน (240) */
+            background: linear-gradient(135deg, 
+                hsl(0, 100%, 70%) 0%, 
+                hsl(240, 100%, 70%) 100%
+            );
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            /* ใช้ค่า HSLA ที่กำหนด: สีขาว (Lightness 100%) โปร่งใส 50% (0.5) */
+            background-color: hsla(0, 50%, 100%, 0.5);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 600px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            /* เพิ่ม Backdrop Blur เพื่อให้ดูเหมือนกระจกฝ้า (Option เสริม) */
+            backdrop-filter: blur(5px); 
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.7;
+            font-size: 15px;
+            text-align: justify;
+        }
